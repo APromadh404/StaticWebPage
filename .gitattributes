@@ -1,0 +1,33 @@
+# Force GitHub to recognize PHP files as PHP (not Hack)
+*.php linguist-language=PHP
+
+# Java files
+*.java linguist-language=Java
+
+# SQL files
+*.sql linguist-language=SQL
+
+# Common web files
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Documentation files (exclude from language stats)
+*.md linguist-documentation=true
+*.txt linguist-documentation=true
+README* linguist-documentation=true
+
+# Generated or vendor files (exclude from language stats)
+lib/ linguist-vendored=true
+vendor/ linguist-vendored=true
+node_modules/ linguist-vendored=true
+*.min.js linguist-generated=true
+*.min.css linguist-generated=true
+
+# Image and media files (exclude from language stats)
+*.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+*.png linguist-generated=true
+*.gif linguist-generated=true
+*.ico linguist-generated=true
+*.svg linguist-generated=true
