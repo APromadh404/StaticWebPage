@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background:linear-gradient(  #08457e ,#006994) ;
+    position: static;
+    width: 100%;
+}
+header img{
+    width: 100px;
+    height: 150px;
+}
+.cl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cl .ssr h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.nav{
+    font-size: 30px;
+    background:transparent;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+.content{
+    font-size: 20px;
+    color: rgb(14, 46, 68);
+    padding: 2px;
+    line-height: 2;
+    
+
+    
+}
+p{
+color: #032a31;
+line-height: 2;
+font-size: 25px;
+
+
+}
+.copy{
+    top: 100000px;
+    position: static;
+               bottom: 0;
+               width: 100vw;
+               height: 30px;
+              text-align: center; 
+               color: white;
+              background-color: #07051a;
+             border: none;
+}
+

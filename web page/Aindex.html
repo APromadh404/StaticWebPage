@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+     
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+     <!--for refresh-->
+     
+    <!---<meta http-equiv="refresh" content="1">-->
+     
+     <title>Home</title>
+
+   <!--favicons-->
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
+   <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+   <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+   <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+   <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+   <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+   <link rel="mainfest" href="/site.webmanifest"> 
+<link rel="stylesheet" href="first page.css">
+<link rel="stylesheet" href="first page 2.css">
+<link rel="stylesheet" href="form.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+     
+
+</head>
+
+<body >
+     <div id="loader">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <span class="loadtext">Loading...</span>
+      </div>
+      <script>
+          //loading effect
+          
+          var loader;                                    
+          function loadNow(opacity){
+              if(opacity<=0){
+                  displaycontent();
+              }
+              else{
+                  loader.style.opacity =opacity;
+                  window.setTimeout(function(){
+                      loadNow(opacity-0.05)
+                  },100);
+              }
+          }
+          function displaycontent(){
+              loader.style.display="none";
+              document.getElementById("content").style.display ='block';
+          }
+          document.addEventListener("DOMContentLoaded",function(){
+              loader = document.getElementById("loader");
+              loadNow(2);
+          });
+          
+          </script>
+          
+          
+     <nav>
+
+     <!--my logo image-->
+     <figure class="logo" >
+              <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+              <caption><h3>Creative Mind Club</h3></caption>
+          </figure>
+     
+          
+ 
+ <ul class="nav-links"> 
+     <a href="Aindex.html" traget="_self">Home</a>
+     <a href="#About"  traget="_self">About</a> 
+     <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+    <a href="#book">Books</a>
+     
+ </ul>
+ 
+<button class="btn" onclick="openSearch()" title="search"><i class="fas fa-search"></i></button>
+
+ <div id="myOverlay" class="search">
+    <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+    <div class="search-content">
+      <form >
+        <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search" spellcheck="false">
+        
+      </form>
+      <ul id="myUL" class="list">
+        <li><a href="s1.html" target="_self">Time management</a></li>
+        <li><a href="s2.html"  traget="_self">budgeting</a></li>
+      
+        <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+        <li><a href="s4.html"  traget="_self">Balance</a></li>
+      
+        <li><a href="s5.html"  traget="_self">Health issus</a></li>
+        <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+        <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+        <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+        <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+        <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+        <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+        <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+      </ul>
+    </div>
+  </div>
+
+ <div class="burger">
+   <div class="line1"></div>
+   <div class="line2"></div>
+   <div class="line3"></div>
+ </div>
+
+</nav>
+
+       
+
+<!--form-->
+<div id="id01" class="modal ">
+   
+    
+     <form  class="appli animate"action="" method="post" id="form">
+         <span onclick="document.getElementById('id01').style.display='none'"
+         class="close" title="Close">&times;</span>
+         <div class="inside">
+         <h2>Contact Us</h2>
+         
+            
+        <div class="field ">
+          <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off"> 
+     
+          <div class="field">
+          <input type="email" placeholder="email address" id="email" class="item" autocomplete="off">
+          
+      </div>
+  </div>
+  <div class="input-box">
+      <div class=" field ">
+          <input type="tel" placeholder="phone number" id="phone" class="item" autocomplete="off">
+          
+      </div>
+      <div class="field ">
+          <input type="text" placeholder="subject" id="subject" class="item" autocomplete="off">
+          
+      </div>
+  </div>
+  <div class="textarea-field field ">
+      <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off"></textarea>
+     
+  </div>
+<button type="submit" value="submit" class="bbox" >send messsage</button><br>
+</div>
+
+     
+     </form>
+     
+     </div>
+            <script>
+
+              
+const form = document.querySelector("form");
+const FullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
+
+function sendEmail(){
+
+const bodyMessage =`Full Name: ${FullName.value}<br> Email: ${email.value}<br> phone: ${phone.value}<br> message: ${mess.value}`;
+    Email.send({
+      SecureToken :"" ,
+        Host : "",
+        Username : "",
+        Password : "",
+        To : '',                  //smtpjs.com
+        From : "",
+        Subject : subject.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if (message == "OK") {
+            Swal.fire({
+                title: "Success",
+                text: "Message sent successfully!", //sweetAlert2.com
+                icon: "success"
+              });  
+        }
+        
+      }
+    );
+}
+
+
+form.addEventListener("submit", (e) => {
+     e.preventDefault();
+  
+if (!FullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error"));
+   { sendEmail();
+
+
+    form.reset();
+     return false;
+   }
+});
+            </script>
+        
+         
+         
+     
+
+<section class="hero">
+     
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+         <div class="cube"></div>
+       
+  <div class="hero-text">
+    <div> <a href="#"><h1 >"Ready and Winning of the challenges to overcome "</h1>
+        
+     <p> If you are educator,you have a wide variety of challenges to over come.
+     </a></p>
+</div>
+  </div> 
+  <div class="sg">
+     <img src="imgforweb/stuo1.png"  alt="image1" height="1000" width="600" >
+</div>
+
+          
+     </section>
+<hr><br>
+<!--data in main-->
+<a name="cn"></a>
+<div class="main">
+     <section class="WELCOME" >
+          
+            <div class="title">
+               <span>WELCOME TO  WEB SITE</span></div>
+            <div class="inform">
+              <div class="left">
+                <img src="imgforweb/highschool-classroom-management-hero.jpg" alt="kk" >
+              </div>
+              <div class="right">
+              <div> 
+          
+                <p> Being a new teacher can be exciting, rewarding, and challenging. You may face many obstacles and uncertainties in your first year of teaching, such as classroom management, curriculum planning, student engagement, and professional development. However, you don't have to struggle alone. There are ways to overcome these common challenges and thrive as a teacher. Here are some tips and strategies to help you navigate your first year of teaching with confidence and support.</p>
+                
+              </div>
+              </div>
+            </div>
+          
+        </section>
+       
+<BR>
+     <section class="containner">
+     <div class="boxgride">
+          <div class="nbox"> <a href="stu01.html"  traget="_self">
+              <div> <h2> for student</h2><br><br>
+              <p >student life refers to a group of people with a common purpose at an education instiutation.they unite for the common purpose of receiving an education. </p>
+               <br><br><span class="boxbutton">Learn more</span>
+          </a></div>
+          </div>
+          
+          <div class="nbox" style="background:linear-gradient(-35DEG,#8E8E8E 0%,#7C7C7C 20%,#474747 40%,#353535 80%,#8E8E8E 100%);"> <a href="edu01.html"  traget="_self">
+              <div> <h2> for educator</h2><br>
+               <p>There are few careers that make a bigger impact than teaching. Teachers are shaping the next generation, those that will decide what the future looks like.
+
+                    But this noble work doesn’t come without challenges.</p>
+               <br><br><span class="boxbutton">Learn more</span>
+          </a></div>
+          </div>
+          
+          
+     </div>
+     
+</section>
+<br>
+<div class="cv"><h1 style="color: #353535; text-transform: capitalize; font-weight: bold;">recommended books for you</h1></div>
+<a name="book"></a>
+<section class="second">
+  <div class="wrapper1">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carousel">
+      <li class="card1">
+        <div class="img"><img src="books/aph.webp" alt="img" draggable="false"></div>
+        <span id="cc">The first Year teacher survival Guide</span>
+        <p><a href="http://localhost/file_upload_download/uploads/a..pdf">Downlaoad now</a></p>
+      </li>
+      <li class="card1">
+       <div class="img"><img src="books/bph.jpg" alt="img" draggable="false"></div>
+       <span>Your first year</span>
+       <p><a href="http://localhost/file_upload_download/uploads/b..pdf">Downlaoad now</a></p>
+     </li>
+     <li class="card1">
+       <div class="img"><img src="books/cph.jpg" alt="img" draggable="false"></div>
+       <span>The first days of school</span>
+       <p><a href="http://localhost/file_upload_download/uploads/c..pdf">Downlaoad now</a></p>
+     </li>
+     <li class="card1">
+       <div class="img"><img src="books/dph.jpg" alt="img" draggable="false"></div>
+       <span>the Element of teaching</span>
+       <p><a href="http://localhost/file_upload_download/uploads/d.pdf">Downlaoad now</a></p>
+     </li>
+     <li class="card1">
+       <div class="img"><img src="books/eph.jpg" alt="img" draggable="false"></div>
+       <span>the Courage to teach</span>
+       <p><a href="http://localhost/file_upload_download/uploads/e.pdf">Downlaoad now</a></p>
+     </li>
+     <li class="card1">
+       <div class="img"><img src="books/fph.jpg" alt="img" draggable="false"></div>
+       <span>the Skillfull teacher</span>
+       <p><a href="http://localhost/file_upload_download/uploads/f.pdf">Downlaoad now</a></p>
+     </li>
+     <li class="card1">
+       <div class="img"><img src="books/gph.jpg" alt="img" draggable="false"></div>
+       <span>happiness and education</span>
+       <p><a href="http://localhost/file_upload_download/uploads/g.pdf">Downlaoad now</a></p>
+     </li>
+   
+
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+</section>
+
+
+ <script>
+
+  const wrapper = document.querySelector(".wrapper1");
+  const carousel = document.querySelector(".carousel");
+  const firstCardWidth = carousel.querySelector(".card1").offsetWidth;
+  const arrowBtns = document.querySelectorAll(".wrapper1 i");
+  const carouselChildrens = [...carousel.children];
+  
+  let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+  
+  let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+  
+  
+  carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+      carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
+  
+  
+  carouselChildrens.slice(0, cardPerView).forEach(card => {
+      carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+  });
+  
+  
+  carousel.classList.add("no-transition");
+  carousel.scrollLeft = carousel.offsetWidth;
+  carousel.classList.remove("no-transition");
+  
+  
+  arrowBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+          carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+      });
+  });
+  
+  const dragStart = (e) => {
+      isDragging = true;
+      carousel.classList.add("dragging");
+      
+      startX = e.pageX;
+      startScrollLeft = carousel.scrollLeft;
+  }
+  
+  const dragging = (e) => {
+      if(!isDragging) return; 
+     
+      carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+  }
+  
+  const dragStop = () => {
+      isDragging = false;
+      carousel.classList.remove("dragging");
+  }
+  
+  const infiniteScroll = () => {
+      
+      if(carousel.scrollLeft === 0) {
+          carousel.classList.add("no-transition");
+          carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+          carousel.classList.remove("no-transition");
+      }
+      
+      else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+          carousel.classList.add("no-transition");
+          carousel.scrollLeft = carousel.offsetWidth;
+          carousel.classList.remove("no-transition");
+      }
+  
+      
+      clearTimeout(timeoutId);
+      if(!wrapper.matches(":hover")) autoPlay();
+  }
+  
+  const autoPlay = () => {
+      if(window.innerWidth < 800 || !isAutoPlay) return; 
+      
+      timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+  }
+  autoPlay();
+  
+  carousel.addEventListener("mousedown", dragStart);
+  carousel.addEventListener("mousemove", dragging);
+  document.addEventListener("mouseup", dragStop);
+  carousel.addEventListener("scroll", infiniteScroll);
+  wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+  wrapper.addEventListener("mouseleave", autoPlay);
+  
+  
+  
+  
+  </script>
+  
+
+
+
+
+<!--data in footer-->
+<div class="footer">
+     <a name="About"></a>
+          <div class="col1">
+              <div> <figure class="logo2" >
+                    <img src="imgforweb/logo01.png"  max-width="10" height="40" ;>
+                     <h2>Creative Mind Club</h2>
+                </figure><br>
+               </div>
+          
+                <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+               <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:promadhavishka@gmail.com</div>
+               <div> <p><i class="fa-solid fa-location-dot">&nbsp;</i><b>Add</b>: No 45/4 Middle Road,Pinwala,panadura</div>
+          </div>
+          <div class="col2">
+              
+              <div> <h3><b>Useful Links</b></h3></div>
+            <!-- <p><a href="https://www.edutopia.org/topics">Edutopia</a></p>
+              <p> <a href="http://teachhub.blogspot.com">Teachhub</a></p>
+               <p><a href="https://www.edweek.org">Eduweek</a></p>
+               <p><a href="https://www.teachertoolkit.co.uk">Teachertoolkit</a></p>
+               <p><a href="https://www.teachersoftomorrow.org">Teacher of Tomorrow</a></p>-->
+              
+               <div><a href="#cn"  traget="_self">Home</a></div>
+          <div><a href="form.html"  traget="_blank">Contact Us</a></div>
+          <div><a href="Cookies.HTML"  traget="_self">Cookies Policy</a></div>
+          <div><a href="term.html"  traget="_self">Term of Servics</a></div>
+          
+          
+          
+          
+          </div>
+          
+          <div class="col3">
+               <br><br>
+               <h3><b>CONTACT</b></h3>
+               <br>
+               <h4>Enter your email address to register to our newsletter subscription</h4>
+         <br><form>
+          <input type="email" placeholder="Your Email..." autocomplete="off" required><br><button>subcribe</button>
+          </form>
+     
+     <span id="Sicon">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+     
+     </span >
+     </div>
+
+</div>
+<div class="copy">
+     Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;||&nbsp;All Rights Reserved 
+</div>
+
+
+
+<script src="first page.js"></script>
+
+
+</body>
+</html>

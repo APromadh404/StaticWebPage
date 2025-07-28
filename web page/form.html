@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
+   <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+   <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+   <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+   <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+   <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+   <link rel="mainfest" href="/site.webmanifest"> 
+</head>
+<body>
+   
+   
+   
+    
+<form  class="appli" action="" method="post">
+    
+    <div class="inside">
+    <h2>Contact Us</h2>
+    
+        <div class="field ">
+            <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off"> 
+       
+            <div class="field">
+            <input type="email" placeholder="email address" id="email" class="item" autocomplete="off">
+            
+        </div>
+    </div>
+    <div class="input-box">
+        <div class=" field ">
+            <input type="tel" placeholder="phone number" id="phone" class="item" autocomplete="off">
+            
+        </div>
+        <div class="field ">
+            <input type="text" placeholder="subject" id="subject" class="item" autocomplete="off">
+            
+        </div>
+    </div>
+    <div class="textarea-field field ">
+        <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off"></textarea>
+       
+    </div>
+<button type="submit" value="submit" class="bbox">send messsage</button><br>
+</div>
+
+</form>
+
+</div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+    
+
+
+
+
+<script>
+
+const form = document.querySelector("form");
+const FullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const mess = document.getElementById("message");
+
+function sendEmail(){
+
+const bodyMessage =`<h2>Full Name:-</h2> <h3>${FullName.value}</h3><br> <h2>Email :-</h2><h3>${email.value}</h3><br> <h2>Phone Number:-</h2> <h3>${phone.value}</h3><br><br> <h2>Message:-</h2> <h3>${mess.value}</h3><br><br><br><br>`;
+    Email.send({
+      SecureToken :"" ,
+        Host : "",
+        Username : "",
+        Password : "",
+        To : '',                  //smtpjs.com
+        From : "",
+        Subject : subject.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if (message == "OK") {
+            Swal.fire({
+                title: "Success",
+                text: "Message sent successfully!", //sweetAlert2.com
+                icon: "success"
+              });  
+        }
+        
+      }
+    );
+}
+
+
+form.addEventListener("submit", (e) => {
+     e.preventDefault();
+  
+if (!FullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error"));
+   { sendEmail();
+
+
+    form.reset();
+     return false;
+   }
+});
+</script>
+
+</body>
+</html>

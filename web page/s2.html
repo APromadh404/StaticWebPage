@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting</title>
+
+    <link rel="apple-touch-icon" sizes="180x180 href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+    <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+    <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+    <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+    <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+    <link rel="mainfest" href="/site.webmanifest"> 
+    <link rel="stylesheet" href="first page.css">
+    <link rel="stylesheet" href="S01.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        .dclass{
+    
+           background: url(imgforweb/budgeting.jpg);
+          background-attachment: scroll;
+          background-position: center;
+           background-repeat: no-repeat;
+          background-size: cover;
+         z-index: 0;
+         opacity: 0.8;
+    }
+    </style>
+    
+    </head>
+    <body>
+     <nav>
+    
+         <!--my logo image-->
+         <figure class="logo" >
+                  <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <caption><h3>Creative Mind Club</h3></caption>
+              </figure>
+         
+              
+     
+     <ul class="nav-links"> 
+         <a href="Aindex.html" traget="_self">Home</a>
+         <a href="#About">About</a> 
+         <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+    
+         <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+         </a>
+          <div class="dropdownc" id="myDropdown">
+            <a href="edu01.html">For New educator</a>
+            
+            <menuitem>
+            <a href="edu01.html">For Student</a>
+                      <menu>
+                    
+                        <menuitem><a href="s1.html">Time management</a></menuitem>
+                        <menuitem><a href="s2.html">budgeting</a></menuitem>
+                        <menuitem><a href="s3.html">Homesickness</a></menuitem>
+                        <menuitem><a href="s4.html">Balance</a></menuitem>
+                        <menuitem><a href="s5.html">Health issus</a></menuitem>
+                        <menuitem><a href="s6.html">Social pressure</a></menuitem>
+                       
+    
+                        
+                      </menu>  
+          </div>
+         
+     </ul>
+     
+     <button class="btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+     <div id="myOverlay" class="search">
+        <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+        <div class="search-content">
+          <form >
+            <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search">
+            
+          </form>
+          <ul id="myUL" class="list">
+            <li><a href="s1.html" target="_self">Time management</a></li>
+            <li><a href="s2.html"  traget="_self">budgeting</a></li>
+          
+            <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+            <li><a href="s4.html"  traget="_self">Balance</a></li>
+          
+            <li><a href="s5.html"  traget="_self">Health issus</a></li>
+            <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+            <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+            <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+            <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+            <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+            <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+            <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+        
+    
+     <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+     </div>
+    
+    </nav>
+    
+    
+    <!--form-->
+    <div id="id01" class="modal">
+       
+        
+        <form  class="appli animate"action="" method="post">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close">&times;</span>
+            <div class="inside">
+            <h2>Contact Us</h2>
+            
+                <div class="field ">
+                    <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off" title="Enter your name" required > 
+               
+                    <div class="field">
+                    <input type="email" placeholder="Email address" id="email" class="item" autocomplete="off" title="Enter your Email Address"required>
+                    
+                </div>
+            </div>
+            <div class="input-box">
+                <div class=" field ">
+                    <input type="tel" placeholder="Phone number" id="phone" class="item" autocomplete="off" maxlength="10" title="Phone Number " required>
+                    
+                </div>
+                <div class="field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
+                    
+                </div>
+            </div>
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off" required></textarea>
+               
+            </div>
+        <button type="submit" value="submit" class="bbox">send messsage</button><br>
+        </div>
+        
+        
+        </form>
+        
+        </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="form.js"></script>
+    <!--main-->
+     <section class="Lmain">
+       <div class="banner">
+
+        <h1>Budgeting</h1>
+        </div>
+        <DIV class="SSD">
+        <div class="dclass">
+            <h2>ACADAMIC ADVICE</h2><BR>
+            <H1>Budgeting Triks for student</H1>
+        </div>
+        <div class="Line text">
+     <H2>
+        budgeting tips for college students that can help set you up for financial success
+     </H2>
+     <P>
+        Creating a budget in college can help you understand where your money goes each month, which is a good first step to take when you're learning to manage your finances.
+
+        With more clarity on your spending and saving habits, you can work toward bigger goals, such as paying off student loan debt, traveling and saving money for future milestones like moving to a new city after college. While you may have fewer expenses during college, it's still a good time to start tracking your money. The budget you create now can help you throughout your 20s and beyond. Plus once you get the budget set up, you only need to make small adjustments as your income and spending habits change.
+        
+        There are many ways you can go about creating a budget, including using a budgeting app that connects to your bank accounts or making a spreadsheet with an online template. Whichever resource you choose, remember to stick to it and hold yourself accountable so you can achieve your money goals.
+
+        
+         </P>
+        </div>
+        </DIV>
+        <div class="video">
+            
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/7eDJAxPuSEc" title="Here Are Our Best Budgeting Tips for College Students" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <div class="Line"><h2>Here are some tips for you.Now you can start budgeting  and work toward achieving your financial goals.. </h2></div>
+        <div class="Line">
+         <ul type="square">
+            <li><h2>Calculate your net income</h2>
+            <p>
+                While in college, you may be working a part-time job or internship to help pay for your education and afford everyday expenses. You might also have an income from grants, scholarships, loans or a monthly allowance from your parents. The amount of money you bring in each month is an essential part of your budget and creates the foundation for how much you can afford to spend.
+
+As the first step in creating your budget, you'll want to calculate your net income, which is the amount of money you earn less taxes. If you receive a regular paycheck through your employer, regardless of whether you're part-time or full-time, the amount deposited into your checking account is your net income.
+
+If you're an hourly employee and your hours vary from week to week, month to month, try to figure out an average amount that you can generally count on each month. It's better to go with a lower number, so you don't risk overspending.
+
+If you make a freelance income, you'll want to subtract taxes from your paycheck and save them in a separate account so you're not surprised by a big tax bill at the end of the year. You can use the TaxAct calculator to estimate how much taxes you'll be required to pay in a year, then divide by 12 to get a monthly tax estimate.
+            </p>
+        </li>
+        <hr>
+            <li>
+                <h2>List monthly expenses</h2>
+                <p>
+                    Next, you'll want to list all of your monthly expenses. Here are some common college-related expenses:
+                    
+                </p>
+                <ol type="I">
+                    <li>School supplies (such as textbooks and electronics)</li>
+                    <li>Rent or room and board</li>
+                    <li>Groceries</li>
+                    <li>Dining</li>
+                    <li>Travel</li>
+                    <li>Household goods</li>
+                    <li>hone, internet and monthly streaming subscriptions</li>
+                </ol>
+                <p>And while deposits into a savings account aren't an expense, it can be helpful to include savings so you remember to put money aside for future goals.</p>
+            </li> <hr>
+            <li>
+                <h2>Make adjustments</h2>
+                <p>
+                    The last step in your budgeting process is to compare all the information you gathered and make sure the numbers work out. Look at your net income compared to your monthly expenses and see if you have enough money coming in each month to cover all your costs.
+
+                    If you can't afford your lifestyle, it's time to make adjustments. While you can consider ways to make more money, like picking up more hours at work, you should also think about ways you can cut costs.
+                    
+                    This may include reducing the amount of money you spend on variable expenses, such as limiting takeout orders and cutting streaming subscriptions that you don't use regularly. You may also want to adjust some fixed expenses with fluctuating costs. When you go grocery shopping, clip digital coupons ahead of time and opt for store-brand items versus name-brand to save extra money. If you're looking to move, find an apartment with cheaper rent     
+                </p>
+            </li> <hr>
+            <li>
+                <h2>Determine average monthly cost for each expense</h2>
+                <p>
+                    Once you label fixed and variable expenses, list how much you spend on each expense per month. Refer to your bank and credit card statements to get the amount.
+
+Many fixed expenses you incur will typically be the same month-to-month, making it easy to put a dollar amount to the cost. For instance, your rent/room and board, meal plan, insurance and phone bills will likely cost the same each month. Some variable expenses may also have a set cost every month, such as your gym membership.
+                
+                </p>
+                <p>
+                    However, some fixed and variable expenses don't have preset costs. If you rent your own apartment off campus and incur utility expenses, such as electric and gas, the cost often fluctuates month-to-month. The same goes for groceries, takeout and household goods.  
+                </p>
+            </li>
+           
+           
+</ul>            
+
+
+        </div>
+        <div class="on">
+            <button type="prvious" class="button1" ><span><a href="s1.html">previous </a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="next" class="button" ><span><a href="s3.html">Next Page</a></span></button>
+        </div>
+     </section>   
+
+  <!--Footer-->
+
+<div class="footer">
+    <a name="About"></a>
+       <div class="col1">
+           <div> <figure class="logo2" >
+                 <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <h2>Creative Mind Club</h2>
+             </figure><br>
+            </div>
+       
+             <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+            <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:ftfhgfjhjgf@gmail.com</div>
+            <div> <i class="fa-solid fa-location-dot">&nbsp;</i>Add: No 45/4 giopy road,norwich NR2,london</div>
+       </div>
+       <div class="col2">
+           <div> <h3><b>Useful Links</b></h3></div>
+         
+       <div><a href="">F.A.Q</a></div>
+       <div><a href="">Cookies Policy</a></div>
+       <div><a href="">Terms of Service</a></div>
+       <div><a href="">Support</a></div>
+       
+       
+       
+       </div>
+       <div class="col3">
+         <br>
+            <h3><b>CONTACT</b></h3>
+            <h4>Enter your email address to register to our newsletter subscription </h4>
+              <form><input type="text" placeholder="Your Email..." required><br><button>subcribe</button></button>
+       </form>
+   
+   <span id="Sicon">
+       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </span >
+   </div>
+   
+   </div>
+   <div class="copy">
+   Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;ll&nbsp;All Rights Reserved 
+   </div>
+   
+   
+     
+   
+   
+   <script src="first page.js"></script>
+   <script src="form.js"></script>
+   
+     
+    
+</body>
+</html>

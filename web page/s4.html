@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="apple-touch-icon" sizes="180x180 href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+    <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+    <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+    <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+    <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+    <link rel="mainfest" href="/site.webmanifest"> 
+    <link rel="stylesheet" href="first page.css">
+    <link rel="stylesheet" href="S01.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        .dclass{
+    
+           background: url(imgforweb/work-life-balance.jpeg);
+          background-attachment: scroll;
+          background-position: center;
+           background-repeat: no-repeat;
+          background-size: cover;
+         z-index: 0;
+         opacity: 0.8;
+    }
+    </style>
+    
+    </head>
+    <body>
+     <nav>
+    
+         <!--my logo image-->
+         <figure class="logo" >
+                  <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <caption><h3>Creative Mind Club</h3></caption>
+              </figure>
+         
+              
+     
+     <ul class="nav-links"> 
+         <a href="Aindex.html" traget="_self">Home</a>
+         <a href="#About">About</a> 
+         <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+    
+         <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+         </a>
+          <div class="dropdownc" id="myDropdown">
+            <a href="edu01.html">For New educator</a>
+            
+            <menuitem>
+            <a href="edu01.html">For Student</a>
+                      <menu>
+                    
+                        <menuitem><a href="s1.html">Time management</a></menuitem>
+                        <menuitem><a href="s2.html">budgeting</a></menuitem>
+                        <menuitem><a href="s3.html">Homesickness</a></menuitem>
+                        <menuitem><a href="s4.html">Balance</a></menuitem>
+                        <menuitem><a href="s5.html">Health issus</a></menuitem>
+                        <menuitem><a href="s6.html">Social pressure</a></menuitem>
+                       
+    
+                        
+                      </menu>  
+          </div>
+         
+     </ul>
+     <button class="btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+    
+     <div id="myOverlay" class="search">
+        <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+        <div class="search-content">
+          <form >
+            <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search">
+            
+          </form>
+          <ul id="myUL" class="list">
+            <li><a href="s1.html" target="_self">Time management</a></li>
+            <li><a href="s2.html"  traget="_self">budgeting</a></li>
+          
+            <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+            <li><a href="s4.html"  traget="_self">Balance</a></li>
+          
+            <li><a href="s5.html"  traget="_self">Health issus</a></li>
+            <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+            <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+            <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+            <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+            <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+            <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+            <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+        
+    
+     <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+     </div>
+    
+    </nav>
+    
+    
+    <!--form-->
+    <div id="id01" class="modal">
+       
+        
+        <form  class="appli animate"action="" method="post">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close">&times;</span>
+            <div class="inside">
+            <h2>Contact Us</h2>
+            
+                <div class="field ">
+                    <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off" title="Enter your name" required > 
+               
+                    <div class="field">
+                    <input type="email" placeholder="Email address" id="email" class="item" autocomplete="off" title="Enter your Email Address"required>
+                    
+                </div>
+            </div>
+            <div class="input-box">
+                <div class=" field ">
+                    <input type="tel" placeholder="Phone number" id="phone" class="item" autocomplete="off" maxlength="10" title="Phone Number " required>
+                    
+                </div>
+                <div class="field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
+                    
+                </div>
+            </div>
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off" required></textarea>
+               
+            </div>
+        <button type="submit" value="submit" class="bbox">send messsage</button><br>
+        </div>
+        
+        
+        </form>
+        
+        </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="form.js"></script>
+    <!--main-->
+     <section class="Lmain">
+       <div class="banner">
+
+        <h1>Balance</h1>
+        </div>
+        <DIV class="SSD">
+        <div class="dclass">
+            <h2>ACADAMIC ADVICE</h2><BR>
+            <H1>Balance study and life as student</H1>
+        </div>
+        <div class="Line text">
+     <H2>
+        How to balance study and life at university
+     </H2>
+     <p>
+        It’s often assumed that students at uni get it easy. All they do is attend a few lectures a week and the rest is all parties and lazy hangover days.
+
+        However, for many that couldn’t be farther from the truth.  Lots of students find themselves unable to cope with their workload, especially if they also have to take on a part-time job to help fund their studies.
+     </p>
+     <p>
+        If you're struggling with your workload and feeling like you’re heading for burnout, here’s our advice for getting back a healthy study-life balance…
+     </p>
+       
+        </div>
+        </DIV>
+        <div class="video">
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/pTZhkLvVmqA" title="How To BALANCE Your Studies and Free Time as a University Student | 7 Tips for Study Life Balance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+        
+        </div>
+        <div class="Line">
+            <h2>
+                
+                To thrive in college, students must master balancing their personal life, academic responsibilities, and social engagements.   
+                  
+            </h2>
+        
+        
+        </div>
+        <div class="Line">
+         <ul type="square">
+            <li><h2>Spend time with friends and family</h2>
+            <p>
+                Making time for the important people in your life is vital for your wellbeing. After all, it's important to connect with people and have real life interactions, and not just spending all your time looking at screens.
+            </p>
+            <p>
+                And spending time with the people that make you happy will rub off on you. You’ll be amazed by how much your mood changes for the better!
+            </p>
+        </li>
+        <hr>
+            <li>
+                <h2>Set realistic goals</h2>
+               <p>
+                As important as studying is, it's impossible to study all day every day (and may not actually help). Trying to do this will only make you drained, bored and unable to take in information. Setting realistic goals in your personal life will help your wellbeing massively and can support you to think about life outside studying.
+               </p>
+            </li> <hr>
+            <li>
+                <h2>Plan out your time</h2>
+                <p>
+                    Creating a schedule is straightforward and effective! As easy as it is, having a visual plan makes working towards a goal much easier and gives you direction. Creating your schedule will help to prioritise assignments that are due first, and organise the remainder of your studies. Sound like less stress?
+
+ 
+                </p>
+               
+                 </li> <hr>
+            <li>
+                <h2> Make time for yourself</h2>
+                <p>
+                    While you’re planning out your time, make sure you schedule in some well-earned ‘me time’ too. Making time for the things which make you happy is extremely important. Whether it's riding exhilarating rollercoasters or going to your favorite restaurant, it doesn’t matter - just try your best to relieve some stress.  
+                </p>
+              
+            </li>
+            <li>
+                <h2> Get a part-time job </h2>
+                
+<p>You might think that adding an extra task and responsibility will only add to your stress and tip the balance further in to the “work” zone.  But actually the opposite could be true. Getting a part time job can be a big help in organising your time properly whilst having the bonus of earning some much-needed money.</p>
+  <p>
+    Your own plans are never 100%, right? You can cancel if you can’t be bothered. Whereas with work plans you have to turn up for your shift even if you can’t be bothered (if you want to keep your job that is). This level of planning and organisation is then a lot easier to apply to all aspects of both study and personal life, helping you to become a more organised, happier person!
+  </p>  
+<p>
+    These are just a few of the many ways you can help yourself not let your very fun social life get in the way of your important studies! Implementing them really isn’t that hard and will benefit not just uni life but your whole future.
+</p>
+            </li>
+           
+           
+</ul>            
+
+
+        </div>
+        <div class="on">
+            <button type="prvious" class="button1" ><span><a href="s3.html">previous </a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="next" class="button" ><span><a href="s5.html">Next Page</a></span></button>
+        </div>
+     </section>   
+
+  <!--Footer-->
+
+<div class="footer">
+    <a name="About"></a>
+       <div class="col1">
+           <div> <figure class="logo2" >
+                 <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <h2>Creative Mind Club</h2>
+             </figure><br>
+            </div>
+       
+             <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+            <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:ftfhgfjhjgf@gmail.com</div>
+            <div> <i class="fa-solid fa-location-dot">&nbsp;</i>Add: No 45/4 giopy road,norwich NR2,london</div>
+       </div>
+       <div class="col2">
+           <div> <h3><b>Useful Links</b></h3></div>
+         
+       <div><a href="">F.A.Q</a></div>
+       <div><a href="">Cookies Policy</a></div>
+       <div><a href="">Terms of Service</a></div>
+       <div><a href="">Support</a></div>
+       
+       
+       
+       </div>
+       <div class="col3">
+         <br>
+            <h3><b>CONTACT</b></h3>
+            <h4>Enter your email address to register to our newsletter subscription </h4>
+              <form><input type="text" placeholder="Your Email..." required><br><button>subcribe</button></button>
+       </form>
+   
+   <span id="Sicon">
+       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </span >
+   </div>
+   
+   </div>
+   <div class="copy">
+   Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;ll&nbsp;All Rights Reserved 
+   </div>
+   
+   
+     
+   
+   
+   <script src="first page.js"></script>
+   <script src="form.js"></script>
+   
+     
+    
+</body>
+</html>

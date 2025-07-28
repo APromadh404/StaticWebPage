@@ -1,0 +1,290 @@
+*{ margin:0 ;
+    padding: 0;
+}
+.Lmain{
+    transform: translateY(135px);
+    margin-bottom: 150px;
+    position: static;
+    background: whitesmoke;
+}
+.banner{
+    position: static;
+    width: 100%;
+    height: 8rem;
+    background: rgb(2, 24, 66);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.banner h1{
+    position:static;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height:2;
+    font-size: 75px;
+    color: azure;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+   
+
+}
+
+ 
+
+.SSD{
+    display: flex;
+    flex-direction: ROW;
+
+}
+.dclass{
+    
+    height:60VH,auto;
+    width:600vw;
+    min-height: 100vh;
+   /* background: linear-gradient(#06d4f0f5, hsla(199, 92%, 33%, 0.479) , #07b4c0dc, rgb(9, 218, 200),#0bc5e6,rgba(6, 234, 241, 0.986));*/
+    border: 2px double rgb(10, 240, 221);
+    position: static;
+margin: 5px;
+    margin-bottom: 10px;
+}
+
+   
+    
+    .dclass h2{
+        color: wheat;
+        background:transparent;
+        line-height: 3;
+    }
+    .dclass h2:hover{
+        color: #0bc5e6;
+        padding: 5px;
+        transform: translate(1px);
+    }
+.dclass h1{
+    margin-top: 400PX;
+    font-size: 40px;
+    color: #14668f;
+    opacity: 6;
+    
+}
+.Line{
+    position:static;
+    margin: 15PX;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2;
+    background-color: white;
+   
+    
+    
+}
+.on{
+    margin-top: 55px;
+    margin-bottom: 65px;
+}
+.Line H2{
+        font-size: 40px;
+}
+.Line p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.Line h4{
+    color: rgba(128, 128, 128, 0.865);
+    font-size: 30px;
+}
+.Line ul li h2{
+    color: rgb(0, 76, 255);
+    font-weight: bold;
+    margin: 5px;
+    
+}
+.Line ul li {
+    color:rgba(0, 0, 0, 0.805);
+    font-weight: 600;
+    margin: 5px;
+    line-height: 2;
+    transform: translateX(30px);
+}
+.Line ul li::marker{
+    color: #0bc5e6;
+    font-size: 4.5rem;
+    
+   
+}
+ol li{
+    
+    color:rgba(7, 143, 143, 0.799) ;
+    line-height: 2;
+    font-size:25px ;
+
+}
+.Line ul> li>ol>li::marker{
+    color: #2f6ce7;
+    font-size: 1.5rem;
+    
+   
+}
+.text h2{
+    color: #021b6b;
+    margin-bottom:55px;
+    opacity: 2;
+    
+}
+iframe{
+   padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+   
+}
+.on>button{
+    border-radius: 4px;
+  background-color: #0bc5e6;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    transform: translateX(40px);
+    
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.on>.button>span>a:hover{
+    color:whitesmoke;
+}
+/*button1*/
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span::before {
+    content: '\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-left: 25px;
+  }
+  
+  .button1:hover span::before {
+    opacity: 1;
+    left: 0;
+  }
+.on>.button1>span>a:hover{
+    color:whitesmoke;
+}
+
+.pho{
+    width: 800px;
+    height: 400px;
+}
+ 
+
+@media only screen and (max-width: 1040px){
+    .SSD{
+        flex-direction: column;
+  }
+
+.dclass{
+    width:100%
+}
+
+.Line H2{
+    font-size: 30px;
+}
+.Line p{
+font-size: 20px;
+}
+.Line h4{
+    font-size: 23px;
+}
+
+iframe{
+    height:340px ;
+    margin: 5px;
+}
+.banner h1{
+    font-size: 55px;
+}
+.pho{
+    width: 500px;
+    height: 300px;
+}
+
+.on>.button{
+    width: 100px;
+    font-size: 16px;
+    padding: 10px;
+}
+.on>.button:hover{
+    width:150px ;
+}
+.button:hover span {
+    padding-right: 15px;
+    
+  }
+  .on>.button1{
+    width: 100px;
+    font-size: 16px;
+    padding: 10px;
+}
+.on>.button1:hover{
+    width:150px ;
+}
+.button1:hover span {
+    padding-left: 15px;
+    
+  }
+}
+
+@media only screen and (max-width: 640px){
+.banner{
+    height:auto;
+}
+    .banner h1{
+        font-size: 45px;
+         
+    }
+
+}
+
+
+
+    

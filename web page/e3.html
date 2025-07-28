@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engage Your student</title>
+    <link rel="apple-touch-icon" sizes="180x180 href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+    <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+    <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+    <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+    <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+    <link rel="mainfest" href="/site.webmanifest"> 
+    <link rel="stylesheet" href="first page.css">
+    <link rel="stylesheet" href="S01.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        .dclass{
+    
+           background: url(imgforweb/engagementwithchil.jpeg);
+          background-attachment: scroll;
+          background-position: center;
+           background-repeat: no-repeat;
+          background-size: cover;
+         z-index: 0;
+         opacity: 0.8;
+    }
+    </style>
+    
+    </head>
+    <body>
+     <nav>
+    
+         <!--my logo image-->
+         <figure class="logo" >
+                  <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <caption><h3>Creative Mind Club</h3></caption>
+              </figure>
+         
+              
+     
+     <ul class="nav-links"> 
+         <a href="Aindex.html" traget="_self">Home</a>
+         <a href="#About">About</a> 
+         <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+         <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+         </a>
+          <div class="dropdownc" id="myDropdown">
+            <a href="stu01.html">For student</a>
+            
+            <menuitem>
+            <a href="edu01.html">For New Educators</a>
+                      <menu>
+                    
+                         <menuitem><a href="e1.html">Seek mentorship</a></menuitem>
+                         <menuitem><a href="e2.html">Plan ahead</a></menuitem>
+                         <menuitem><a href="e3.html">Engage your student</a></menuitem>
+                         <menuitem><a href="e4.html">Seek feedback</a></menuitem>
+                         <menuitem><a href="e5.html">Take care of yourself</a></menuitem>
+                         <menuitem><a href="e6.html">Keep learning</a></menuitem>
+                        
+    
+                        
+                      </menu>  
+          </div>
+        
+         
+     </ul>
+     <button class="btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+    
+     <div id="myOverlay" class="search">
+        <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+        <div class="search-content">
+          <form >
+            <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search">
+            
+          </form>
+          <ul id="myUL" class="list">
+            <li><a href="s1.html" target="_self">Time management</a></li>
+            <li><a href="s2.html"  traget="_self">budgeting</a></li>
+          
+            <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+            <li><a href="s4.html"  traget="_self">Balance</a></li>
+          
+            <li><a href="s5.html"  traget="_self">Health issus</a></li>
+            <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+            <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+            <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+            <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+            <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+            <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+            <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+        
+    
+     <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+     </div>
+    
+    </nav>
+    
+    
+    <!--form-->
+    <div id="id01" class="modal">
+       
+        
+        <form  class="appli animate"action="" method="post">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close">&times;</span>
+            <div class="inside">
+            <h2>Contact Us</h2>
+            
+                <div class="field ">
+                    <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off" title="Enter your name" required > 
+               
+                    <div class="field">
+                    <input type="email" placeholder="Email address" id="email" class="item" autocomplete="off" title="Enter your Email Address"required>
+                    
+                </div>
+            </div>
+            <div class="input-box">
+                <div class=" field ">
+                    <input type="tel" placeholder="Phone number" id="phone" class="item" autocomplete="off" maxlength="10" title="Phone Number " required>
+                    
+                </div>
+                <div class="field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
+                    
+                </div>
+            </div>
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off" required></textarea>
+               
+            </div>
+        <button type="submit" value="submit" class="bbox">send messsage</button><br>
+        </div>
+        
+        
+        </form>
+        
+        </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="form.js"></script>
+    <!--main-->
+     <section class="Lmain">
+       <div class="banner">
+
+        <h1>Engage Your student</h1>
+        </div>
+        <DIV class="SSD">
+        <div class="dclass">
+            <h2>ACADAMIC ADVICE</h2><BR>
+            <H1>To Keep Students Engaged</H1>
+        </div>
+        <div class="Line text">
+     <H2>Why is engagement important?
+        
+     </H2>
+     <p>
+        Simply put, an increased level of engagement will lead to great student learning, and improve the learning process. Those students who actively engage with their teachers, subject matter, and lessons, will improve their understanding and appreciation of the topics.
+     </p>
+     <p>
+        Simply put, an increased level of engagement will lead to great student learning, and improve the learning process. Those students who actively engage with their teachers, subject matter, and lessons, will improve their understanding and appreciation of the topics.
+     </p>
+       
+        </div>
+        </DIV>
+        <div class="video">
+            
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/Q5tdBOg8kus" title="10 Strategies &amp; Tips to Increase Student Engagement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="Line">
+            <h2>
+                There are some of Trips how to engage with your student:
+                    
+                  
+            </h2></div>
+        <div class="Line">
+         <ul type="square">
+            <li><h2>Start with a warm-up</h2>
+                <p>
+                    No matter what time of the day it happens to be (though we all know mornings are the toughest), jumping right into a lesson or lecture is rarely easy. Students take time to settle in and focus on what is going on. Kicking off with a warm-up activity can help to get everyone engaged and focused from the very start.
+                </p>
+            <p>
+                cebreakers of any kind can be the perfect way of doing this as they are time efficient while also offering you the opportunity to ask any type of question.  For more ideas and inspiration on what icebreakers to ask, we have a wide array of some of our favorites.
+            </p>
+        </li>
+        
+            <li>
+                <h2>Regularly test students</h2>
+                <p>
+                    No, don’t worry we are not saying you need to set a midterm-style paper every other week. What we are suggesting is more quick-hitter assessment quizzes.   
+                </p>
+               <p>
+                Not just asking students more than if they understand what is going on, but actively quizzing them to see if they have been paying attention and they are retaining the information. 
+               </p>
+               <p>
+                Knowledge tests don’t have to be boring or stressful for your students. Instead of a paper and pen and test, try using an interactive way of quizzing students that will be quick and easy to set up and run. 
+               </p>
+            </li> 
+            <li>
+                <h2>Promote self-assessment and self-paced learning</h2>
+<p>
+    Engage your students through self-assessment activities such as formative assessments. Teachers and lecturers don’t need to be the only people to provide students with feedback, they can also assess their abilities.   
+</p>
+<p>
+    Likewise, self-paced learning can be a way to help remove a common point of frustration for many students; time. Trying to understand complex topics or remembering a series of facts and figures can become incredibly irritating when asked to do so in a certain amount of time.
+
+Fewer frustrated students mean a more engaged and enthusiastic audience.
+</p>
+                 </li> 
+            <li>
+                <h2>Brainstorm together</h2>
+                <p>
+                    Brainstorming will help students to think creatively and collaborate with their peers. Asking them to come up with their ideas and thoughts on a subject can be a good way to check their understanding of a subject. 
+                </p>
+              <p>
+                Thinking in this more complex manner will help to engage students as it will require them to focus and take their time over their responses.
+              </p>
+              <p>
+                Brainstorming can also be an optimal way to promote a collaborative work and study environment. Offering feedback rather than criticism of others’ ideas will help to promote a sense of group effort and develop feedback and teamwork skills. 
+              </p>
+            </li>
+            <li>
+                <h2>Spark discussion in groups</h2>
+                
+<p>
+    Making room for discussion in the classroom can be a great way to engage your students in the classroom. Enabling your students to discuss something they have an opinion about, or are even passionate about will encourage them to participate in the class. 
+</p>
+       <p>
+        Working in groups will also remove the fear level that comes with standing up in front of a larger group and expressing one’s thoughts. A willing group member can speak up on behalf of the group further eliminating the fear of public speaking for many. 
+       </p>  
+       <p>
+        Students who would not normally feel comfortable partaking in this type of activity can thus become more active participants resulting in a more engaged group as a whole.
+       </p>       
+            </li>
+           
+           
+</ul>            
+
+
+        </div>
+        <div class="on">
+            <button type="prvious" class="button1" ><span><a href="e2.html">previous </a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="next" class="button" ><span><a href="e4.html">Next Page</a></span></button>
+        </div>
+     </section>   
+
+  <!--Footer-->
+
+<div class="footer">
+    <a name="About"></a>
+       <div class="col1">
+           <div> <figure class="logo2" >
+                 <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <h2>Creative Mind Club</h2>
+             </figure><br>
+            </div>
+       
+             <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+            <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:ftfhgfjhjgf@gmail.com</div>
+            <div> <i class="fa-solid fa-location-dot">&nbsp;</i>Add: No 45/4 giopy road,norwich NR2,london</div>
+       </div>
+       <div class="col2">
+           <div> <h3><b>Useful Links</b></h3></div>
+         
+       <div><a href="">F.A.Q</a></div>
+       <div><a href="">Cookies Policy</a></div>
+       <div><a href="">Terms of Service</a></div>
+       <div><a href="">Support</a></div>
+       
+       
+       
+       </div>
+       <div class="col3">
+         <br>
+            <h3><b>CONTACT</b></h3>
+            <h4>Enter your email address to register to our newsletter subscription </h4>
+              <form><input type="text" placeholder="Your Email..." required><br><button>subcribe</button></button>
+       </form>
+   
+   <span id="Sicon">
+       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </span >
+   </div>
+   
+   </div>
+   <div class="copy">
+   Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;ll&nbsp;All Rights Reserved 
+   </div>
+   
+   
+     
+   
+   
+   <script src="first page.js"></script>
+   <script src="form.js"></script>
+   
+     
+    
+</body>
+</html>

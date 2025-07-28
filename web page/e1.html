@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seek mentorship</title>
+    <link rel="apple-touch-icon" sizes="180x180 href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+    <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+    <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+    <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+    <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+    <link rel="mainfest" href="/site.webmanifest"> 
+    <link rel="stylesheet" href="first page.css">
+    <link rel="stylesheet" href="S01.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        .dclass{
+    
+           background: url(imgforweb/mentor.webp);
+          background-attachment: scroll;
+          background-position: center;
+           background-repeat: no-repeat;
+          background-size: cover;
+         z-index: 0;
+         opacity: 0.8;
+    }
+    </style>
+    
+    </head>
+    <body>
+     <nav>
+    
+         <!--my logo image-->
+         <figure class="logo" >
+                  <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <caption><h3>Creative Mind Club</h3></caption>
+              </figure>
+         
+              
+     
+     <ul class="nav-links"> 
+         <a href="Aindex.html" traget="_self">Home</a>
+         <a href="#About">About</a> 
+         <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+         <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+         </a>
+          <div class="dropdownc" id="myDropdown">
+            <a href="stu01.html">For student</a>
+            
+            <menuitem>
+            <a href="edu01.html">For New Educators</a>
+                      <menu>
+                    
+                         <menuitem><a href="e1.html">Seek mentorship</a></menuitem>
+                         <menuitem><a href="e2.html">Plan ahead</a></menuitem>
+                         <menuitem><a href="e3.html">Engage your student</a></menuitem>
+                         <menuitem><a href="e4.html">Seek feedback</a></menuitem>
+                         <menuitem><a href="e5.html">Take care of yourself</a></menuitem>
+                         <menuitem><a href="e6.html">Keep learning</a></menuitem>
+                        
+    
+                        
+                      </menu>  
+          </div>
+        
+         
+     </ul>
+     
+    
+     <button class="btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+     
+     <div id="myOverlay" class="search">
+        <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+        <div class="search-content">
+          <form >
+            <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search">
+            
+          </form>
+          <ul id="myUL" class="list">
+            <li><a href="s1.html" target="_self">Time management</a></li>
+            <li><a href="s2.html"  traget="_self">budgeting</a></li>
+          
+            <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+            <li><a href="s4.html"  traget="_self">Balance</a></li>
+          
+            <li><a href="s5.html"  traget="_self">Health issus</a></li>
+            <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+            <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+            <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+            <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+            <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+            <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+            <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+     <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+     </div>
+    
+    </nav>
+    
+    
+    <!--form-->
+    <div id="id01" class="modal">
+       
+        
+        <form  class="appli animate"action="" method="post">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close">&times;</span>
+            <div class="inside">
+            <h2>Contact Us</h2>
+            
+                <div class="field ">
+                    <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off" title="Enter your name" required > 
+               
+                    <div class="field">
+                    <input type="email" placeholder="Email address" id="email" class="item" autocomplete="off" title="Enter your Email Address"required>
+                    
+                </div>
+            </div>
+            <div class="input-box">
+                <div class=" field ">
+                    <input type="tel" placeholder="Phone number" id="phone" class="item" autocomplete="off" maxlength="10" title="Phone Number " required>
+                    
+                </div>
+                <div class="field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
+                    
+                </div>
+            </div>
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off" required></textarea>
+               
+            </div>
+        <button type="submit" value="submit" class="bbox">send messsage</button><br>
+        </div>
+        
+        
+        </form>
+        
+        </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="form.js"></script>
+    <!--main-->
+     <section class="Lmain">
+       <div class="banner">
+
+        <h1>Seek mentorship</h1>
+        </div>
+        <DIV class="SSD">
+        <div class="dclass">
+            <h2>ACADAMIC ADVICE</h2><BR>
+            <H1>New Teachers Can Make the Most Out of Having a Mentor</H1>
+        </div>
+        <div class="Line text">
+     <H2>
+        Ways New Teachers Can Make the Most Out of Having a Mentor
+     </H2>
+     <p>
+        A mentor can be a huge benefit for a new teacher, and these ideas will help you take full advantage of working with an experienced colleague.
+     </p>
+       <p>
+        First-year teachers who are matched with teacher-mentors can expect a positive partnership that spans their inaugural professional year, at least. Mentors are trained for their roles as skilled guides, and they commit to working alongside novice teachers in various ways. Just as mentors agree to dedicate themselves to the professional partnership, so should mentees consent to the mentor’s expectations.
+       </p>
+        </div>
+        </DIV>
+        <div class="video">
+            
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/X1WIhmyHVQ4" title="Induction and Mentoring of New Teachers (REL Mid-Atlantic)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="Line">
+            <h2>
+                
+               SOME GUIDELINES TO MAXIMIZE MENTEES’ LEARNING AND GROWTH               
+            </h2></div>
+        <div class="Line">
+         <ul type="square">
+            <li>
+                <h2>Learning focused</h2>
+            <p>
+                The goal of providing novice educators with an experienced professional mentor is to support and promote the new teacher’s growth. Although incoming teachers no doubt would learn through their interactions and experiences without an expert guide, trained mentors can bolster advanced professional development; provide targeted, supportive feedback; and teach novices how to reflect while illustrating its importance for all educators.
+            </p>
+            <p>
+                After all, suggestions that a mentor provides are based on experience as a teacher combined with quality mentor training. As such, the pair should refrain from personal criticism or comments and maintain their professional, growth-focused connection.
+            </p>
+            <p>
+                In the same way that teachers prepare their students for life beyond the classroom, mentors help a protégé think deeply and problem-solve for the future when mentoring is complete. Mentors’ goals include guidance beyond the novice’s inaugural year, as successful mentors can impact teachers into their professional future. 
+            </p>
+            <p>
+                Mentees should be aware that reciprocal learning is an outcome of their pairing: Both teachers will learn and grow professionally. Mentors can learn about their own instructional practice through discussions, observations, and reflections with a mentee. Experienced educators are often surprised at their own growth while participating in mentoring.
+
+            </p>
+        </li>
+        
+            <li>
+                <h2>Full participation.</h2>
+                <p>
+                    Mentees ensure personal success when they accept their mentor as a guide for novices working in a challenging profession. Collaborating with an experienced educator doesn’t mean the novice is needy, ill-prepared, or an ineffective educator; rather, newbies are matched to provide a proactive, available consort from the beginning of their career.
+                </p>
+                <p>
+                    Even so, some teachers view mentoring as unnecessary and negative. I’ve interacted with numerous novices who told me about their student-teaching accomplishments and additional expertise so that I’d cancel their need for a mentor. I encouraged these professionals to accept the collaborative vulnerability of working with an experienced colleague and trust my experience that mentoring is not meant as a punishment or humiliation but to groom expert educators who reflect and strive to grow professionally.
+                </p>
+               <p>
+                Mentees’ full participation in mentoring includes attending all interactions ready to learn and grow. They won’t, for instance, attend a meeting just to check the box that the mentor and mentee have met. Mentor and mentee will build upon agreements they made at the start of their relationship as a foundation for trust and professional growth. Over the years, I’ve observed many teacher-protégés who didn’t “need” a mentor but who embraced the opportunity and experienced a successful, learning-focused journey that jump-started their career in education.
+               </p>
+            </li> 
+            <li>
+                <h2>Peer visits</h2>
+                <p>Feedback, suggestions, and reading are helpful, but seeing strategies in action is often the most effective way for a teacher to learn about implementation. That’s why classroom visits are so important. When going to a peer’s classroom, it’s helpful to focus on one aspect at a time, such as classroom setup or instructional strategies. Mentees should talk with their mentor beforehand to focus the visit: what they will be looking for; how to observe without inserting personal bias.</p>
+               <p>
+                After the classroom visit, the mentor and mentee have a post-observation discussion to reflect on what they observed and how to learn from it. The mentor will also conduct informal observations in the novice’s classroom. The focus will be on one area, with a post-observation discussion for reflection and growth-producing feedback. Everyone can learn from observing or taking part in a less-than-excellent lesson. It’s really about the reflection and the takeaways from the visits.
+               </p>
+                 </li> 
+            <li>
+                <h2>Reflecting</h2>
+                <p>
+                    Mentors guide mentees through reflections, and these opportunities are the foundation of a mentee’s growth. Mentors pose a variety of open-ended questions that help new teachers learn about their teaching and how to think about professionalism. For example, following a mentor’s observation of the new teacher’s lesson, a reflective question might be, “Was the lesson I observed a successful one?” and “How do you know it was/was not successful?” Mentors pose questions, and mentees learn to dig deep with reflections and answers. Mentees will learn to reflect on their own about whether an activity is effective.
+                </p>
+              <p>
+                When mentees understand their role and agree to the four expectations of their mentoring year, they increase the odds that they will gain as much as possible from their first year as professional educators.
+              </p>
+            </li>
+           
+           
+           
+</ul>            
+
+
+        </div>
+        <div class="on">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="next" class="button" ><span><a href="e2.html"  traget="_self">Next Page</a></span></button>
+        </div>
+     </section>   
+
+  <!--Footer-->
+
+<div class="footer">
+    <a name="About"></a>
+       <div class="col1">
+           <div> <figure class="logo2" >
+                 <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <h2>Creative Mind Club</h2>
+             </figure><br>
+            </div>
+       
+             <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+            <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:ftfhgfjhjgf@gmail.com</div>
+            <div> <i class="fa-solid fa-location-dot">&nbsp;</i>Add: No 45/4 giopy road,norwich NR2,london</div>
+       </div>
+       <div class="col2">
+           <div> <h3><b>Useful Links</b></h3></div>
+         
+       <div><a href="">F.A.Q</a></div>
+       <div><a href="">Cookies Policy</a></div>
+       <div><a href="">Terms of Service</a></div>
+       <div><a href="">Support</a></div>
+       
+       
+       
+       </div>
+       <div class="col3">
+         <br>
+            <h3><b>CONTACT</b></h3>
+            <h4>Enter your email address to register to our newsletter subscription </h4>
+              <form><input type="text" placeholder="Your Email..." required><br><button>subcribe</button></button>
+       </form>
+   
+   <span id="Sicon">
+       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </span >
+   </div>
+   
+   </div>
+   <div class="copy">
+   Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;ll&nbsp;All Rights Reserved 
+   </div>
+   
+   
+     
+   
+   
+   <script src="first page.js"></script>
+   <script src="form.js"></script>
+   
+     
+    
+</body>
+</html>

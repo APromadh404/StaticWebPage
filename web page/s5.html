@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health issues</title>
+    <link rel="apple-touch-icon" sizes="180x180 href="favicon_io\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="favicon_io/favicon-16x16.png"> 
+    <link rel="icon" type="image\png" sizes="32x32" href="favicon_io/favicon-32x32.png"> 
+    <link rel="icon" type="image\png" sizes="48x48" href="favicon_io/favicon.png"> 
+    <link rel="icon" type="image\png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+    <link rel="icon" type="image\png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+    <link rel="mainfest" href="/site.webmanifest"> 
+    <link rel="stylesheet" href="first page.css">
+    <link rel="stylesheet" href="S01.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/470500371e.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        .dclass{
+    
+           background: url(imgforweb/mental-illness.jpeg);
+          background-attachment: scroll;
+          background-position: center;
+           background-repeat: no-repeat;
+          background-size: cover;
+         z-index: 0;
+         opacity: 0.8;
+    }
+    </style>
+    
+    </head>
+    <body>
+     <nav>
+    
+         <!--my logo image-->
+         <figure class="logo" >
+                  <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <caption><h3>Creative Mind Club</h3></caption>
+              </figure>
+         
+              
+     
+     <ul class="nav-links"> 
+         <a href="Aindex.html" traget="_self">Home</a>
+         <a href="#About">About</a> 
+         <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;">Contact</a>
+    
+         <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+         </a>
+          <div class="dropdownc" id="myDropdown">
+            <a href="edu01.html">For New educator</a>
+            
+            <menuitem>
+            <a href="edu01.html">For Student</a>
+                      <menu>
+                    
+                        <menuitem><a href="s1.html">Time management</a></menuitem>
+                        <menuitem><a href="s2.html">budgeting</a></menuitem>
+                        <menuitem><a href="s3.html">Homesickness</a></menuitem>
+                        <menuitem><a href="s4.html">Balance</a></menuitem>
+                        <menuitem><a href="s5.html">Health issus</a></menuitem>
+                        <menuitem><a href="s6.html">Social pressure</a></menuitem>
+                       
+    
+                        
+                      </menu>  
+          </div>
+         
+     </ul>
+     <button class="btn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+    
+     <div id="myOverlay" class="search">
+        <span class="closebtn" onclick="closeSearch()" title="Close ">X</span>
+        <div class="search-content">
+          <form >
+            <input type="text" id="myInput" onkeyup="myFunction2()"  placeholder="Search here.." name="search">
+            
+          </form>
+          <ul id="myUL" class="list">
+            <li><a href="s1.html" target="_self">Time management</a></li>
+            <li><a href="s2.html"  traget="_self">budgeting</a></li>
+          
+            <li><a href="s3.html"  traget="_self">Homesickness</a></li>
+            <li><a href="s4.html"  traget="_self">Balance</a></li>
+          
+            <li><a href="s5.html"  traget="_self">Health issus</a></li>
+            <li><a href="s6.html"  traget="_self">Social pressure</a></li>
+            <li><a href="e1.html"  traget="_self">Seek mentorship</a></li>
+            <li><a href="e2.html"  traget="_self">Plan ahead</a></li>
+            <li><a href="e3.html"  traget="_self">Engage your student</a></li>
+            <li><a href="e4.html"  traget="_self">Seek feedback</a></li>
+            <li><a href="e5.html"  traget="_self">Take care of yourself</a></li>
+            <li><a href="e6.html"  traget="_self">Keep learning</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    
+        
+    
+     <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+     </div>
+    
+    </nav>
+    
+    
+    <!--form-->
+    <div id="id01" class="modal">
+       
+        
+        <form  class="appli animate"action="" method="post">
+            <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close">&times;</span>
+            <div class="inside">
+            <h2>Contact Us</h2>
+            
+                <div class="field ">
+                    <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off" title="Enter your name" required > 
+               
+                    <div class="field">
+                    <input type="email" placeholder="Email address" id="email" class="item" autocomplete="off" title="Enter your Email Address"required>
+                    
+                </div>
+            </div>
+            <div class="input-box">
+                <div class=" field ">
+                    <input type="tel" placeholder="Phone number" id="phone" class="item" autocomplete="off" maxlength="10" title="Phone Number " required>
+                    
+                </div>
+                <div class="field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" required>
+                    
+                </div>
+            </div>
+            <div class="textarea-field field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="message" class="item" autocomplete="off" required></textarea>
+               
+            </div>
+        <button type="submit" value="submit" class="bbox">send messsage</button><br>
+        </div>
+        
+        
+        </form>
+        
+        </div>
+        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="form.js"></script>
+    <!--main-->
+     <section class="Lmain">
+       <div class="banner">
+
+        <h1>Health issues</h1>
+        </div>
+        <DIV class="SSD">
+        <div class="dclass">
+            <h2>ACADAMIC ADVICE</h2><BR>
+            <H1>How to maintain Our Health</H1>
+        </div>
+        <div class="Line text">
+     <H2>
+        What can The student do for maintaining their health ?
+     </H2>
+     <p>
+        Health issues, including irregular sleep patterns, unhealthy eating habits, mental exhaustion, or some illness, significantly affect the students. They must prioritize self-care and make conscious efforts to maintain their health
+     </p>
+       
+        </div>
+        </DIV>
+        <div class="video">
+            <iframe width="100%" height="540" src="https://www.youtube.com/embed/l_9PchV6PIc" title="Your Mental Health in College | How to College | Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+        
+        </div>
+        <div class="Line">
+            <h2>
+                Common Health Issues for School Students
+       
+                  
+            </h2>
+
+        </div>
+        <div class="Line">
+         <ul type="square">
+            <li>
+                <h2>Food Poisoning</h2>
+            <p>
+                One of the major issues affecting students' health is food poisoning. It is caused by consuming uncovered, stale, unrefrigerated, or contaminated food.
+            </p>
+            <p>
+                Symptoms of this disease include sharp and consistent abdominal pain, diarrhoea, vomiting, etc. Sometimes vomiting may also occur along with high fever and chills.
+            </p>
+            <p>
+                According to doctors, food poisoning victims must avoid solid and dairy products, as they often elevate the uneasiness, and switch to clear fluids along with light meals. 
+            </p>
+        </li>
+        <hr>
+            <li>
+                <h2>Sprains</h2>
+               <p>Well, this might not actually be a ‘disease’, but it is one of the most common injuries that a student faces. A sprain refers to the stretching or tearing of ligaments or joints. This usually happens while performing any physical activity.</p>
+               <p>
+                It usually occurs in places like ankles, wrists, knees, legs, etc and the symptoms include severe pain and inflammation of the sprained area.
+               </p>
+               <p>
+                Also, while some sprains can be healed by ointments and physiotherapy, some may even require surgeries to be fixed.
+               </p>
+            </li> <hr>
+            <li>
+                <h2>Measles</h2>
+               <p>
+                Another common disease that students commonly get affected with, is measles. Although preventive vaccinations are readily available nowadays, still this disease persists and is often seen affecting school students.
+               </p>
+               <p>
+                It is caused due to a very contagious virus known as the morbillivirus. Symptoms include feeling low or sick and growing reddish patches or rashes all over the body.
+               </p>
+                 </li> 
+                 <hr>
+            <li>
+                <h2>Nose Bleeding</h2>
+                <p>
+                    Dry nasal membranes cause nosebleeds, which are a major health problem among students. This is a prevalent problem among students who have a habit of picking up their noses regularly. When someone picks their nose, the blood vessels inside rupture, causing the nose to bleed.
+                </p>
+                <p>
+                    Students who are on anti-allergic or decongestant medicine, as well as those who are prone to colds and sinus disorders, may develop nosebleeds.  
+                </p>
+                <p>
+                    Nosebleeds can also be caused by blowing the nose frequently. The easiest strategy to avoid a nosebleed is to ensure that the nasal passages are well lubricated and avoid picking up the nose. 
+                </p>
+              
+            </li>
+            <li>
+                <h2>Common Cold</h2>
+                
+<p>
+    Perhaps the most common children’s health issue is the common cold. And not just children, this is a disease that affects adults as well. In fact, almost everyone has been affected by this particular issue once in their lives.
+</p>
+<p>
+    The signs of the common cold are repeated sneezing along with coughing, throat irritation, and a runny or blocked nose. People and children sensitive to cold are likely to catch this disease during the advent of winter.
+</p>
+                
+            </li>
+           
+           
+</ul>  
+<h2>What to Do?</h2>          
+<p>
+    Students are always at risk. But, you just need to monitor your diet, the way of life, so that in your youth not to lose health. After all, the study will end, and then the problems will remain. The data on current trends should be interpreted as a very unfavorable symptom that has a detrimental effect on the health of the younger generation, future potential parents, specialists, and professionals who are called upon to protect public health. This problem in society as a whole and youth, in particular, must be put on one of the first places on a state scale. It is necessary to popularize a healthy lifestyle, introduce various wellness programs.
+</p>
+<p>
+    Apparently, this is the student's lifestyle, since diseases of different varieties and stripes await him. Therefore, a "healthy lifestyle" is not just a beautiful phrase, but a real way to avoid health problems both today and in the future. If you found at least one of the diseases from the list, then it's time, firstly, to see a doctor and, secondly, to begin to lead a healthy lifestyle.
+</p>
+
+        </div>
+        <div class="on">
+            <button type="prvious" class="button1" ><span><a href="s4.html">previous </a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="next" class="button" ><span><a href="s6.html">Next Page</a></span></button>
+        </div>
+     </section>   
+
+  <!--Footer-->
+
+<div class="footer">
+    <a name="About"></a>
+       <div class="col1">
+           <div> <figure class="logo2" >
+                 <img src="imgforweb/logo01.png"  max-width="40" height="50" ;>
+                  <h2>Creative Mind Club</h2>
+             </figure><br>
+            </div>
+       
+             <div><i class="fa-solid fa-phone"></i>Tele: +95776523968</div>
+            <div><i class="fa-sharp fa-solid fa-envelope"></i>Email:ftfhgfjhjgf@gmail.com</div>
+            <div> <i class="fa-solid fa-location-dot">&nbsp;</i>Add: No 45/4 giopy road,norwich NR2,london</div>
+       </div>
+       <div class="col2">
+           <div> <h3><b>Useful Links</b></h3></div>
+         
+       <div><a href="">F.A.Q</a></div>
+       <div><a href="">Cookies Policy</a></div>
+       <div><a href="">Terms of Service</a></div>
+       <div><a href="">Support</a></div>
+       
+       
+       
+       </div>
+       <div class="col3">
+         <br>
+            <h3><b>CONTACT</b></h3>
+            <h4>Enter your email address to register to our newsletter subscription </h4>
+              <form><input type="text" placeholder="Your Email..." required><br><button>subcribe</button></button>
+       </form>
+   
+   <span id="Sicon">
+       <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </span >
+   </div>
+   
+   </div>
+   <div class="copy">
+   Copyright &copy;&nbsp;<span id="nyear"></span>&nbsp; Creative Mind Club&nbsp;ll&nbsp;All Rights Reserved 
+   </div>
+   
+   
+     
+   
+   
+   <script src="first page.js"></script>
+   <script src="form.js"></script>
+   
+     
+    
+</body>
+</html>
