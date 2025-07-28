@@ -3,11 +3,8 @@ A simple, static blog platform designed for **students and instructors** to shar
 
 ---
 
-
-
 ## 📸 Screenshots
 ![Home Page](./webimage.png)
-
 
 ---
 
@@ -22,7 +19,5 @@ A simple, static blog platform designed for **students and instructors** to shar
 ## 🙋‍♂️ Author
 - **AP** - [GitHub Profile](https://github.com/APromadh404)
 ---
-
 ⭐ **Star this repository if you found it helpful for your educational journey!**
-
 ---
